@@ -1,22 +1,30 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
 
-  var data = "데이터바인딩 테스트";
-
+  let title = '지금 날씨는 영하 9도네요.';
+  let [state_title, state_title_change] = useState(["This is State", "오늘 풋살합니다~"]);
+  
   return (
     <div className="App">
-      <div className="blue-nav">
+      <div className="yellow-nav">
         <div>SM's HowToUseReact </div>
-        {/* 
-          인라인 스타일 줄 땐
-          style = { {여기 안에다가.} }
-          속성 명에 -가 들어가면 안됨. 대신 대문자로
-          ex) font-size -> fontSize
-        */}
-        <div style={{ fontSize:'15px', color:'black'} }>{data}</div>
       </div>  
+      <div className="div-list">
+        <h3>{ title }</h3>
+        <p>2021-12-17</p>
+        <hr/>
+
+        <h3>{ state_title[0] }</h3>
+        <p>2021-12-18</p>
+        <hr/>
+
+        <h3>{ state_title[1] }</h3>
+        <p>2021-12-18</p>
+        <hr/>
+        
+      </div>
     </div>
   );
 }

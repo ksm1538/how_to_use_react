@@ -49,3 +49,20 @@
   font-weight: 550;
   font-size: 20px;
 }
+
+.div-list{
+  margin-top : 30px;
+  text-align: left;
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.yellow-nav{
+  background : yellow;
+  width : 100%;
+  display : flex;
+  color : black;
+  padding : 15px;
+  font-weight: 550;
+  font-size: 20px;
+}

@@ -1,0 +1,24 @@
+1. 주석 처리
+{/*  주석 내용  */}
+
+
+2. 데이터 바인딩
+{ } 로 감싸서 변수 넣기
+
+var data = '안녕';
+<div>{data}</div>
+
+
+3. JSX에서 class 선언 
+class가 아닌 className으로 선언
+
+- class = "blue-div" (X)
+- className = "blue-div" (O)
+
+
+4. State 사용 방법
+- useState() : state를 하나 만들어주는 함수
+- 필수 import React, { useState } from 'react';
+- let [state_title, state_title_change] = useState("This is State");
+    - state_title : State Value. 즉, "내일 날씨는 영하 11도네요." (1번 째 배열 항목)
+    - state_title_change : State Value 변경 함수 (2번 째 배열 항목)
