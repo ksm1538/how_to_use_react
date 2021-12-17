@@ -19,6 +19,26 @@ class가 아닌 className으로 선언
 4. State 사용 방법
 - useState() : state를 하나 만들어주는 함수
 - 필수 import React, { useState } from 'react';
+- 사용 이유?
+    - 변수가 변경될 때 자동으로 HTML을 재렌더링하기 위함.
 - let [state_title, state_title_change] = useState("This is State");
-    - state_title : State Value. 즉, "내일 날씨는 영하 11도네요." (1번 째 배열 항목)
+    - state_title : State Value. 즉, "This is State" (1번 째 배열 항목)
     - state_title_change : State Value 변경 함수 (2번 째 배열 항목)
+
+
+5. onClick 사용
+- JS : <div onclick="함수 or 코드">
+- JSX : <div onClick={함수}>
+
+ex) 
+<div onClick={ func_hi }> 
+<div onClick={ function(){ 실행할 코드 } }>
+<div onClick={ () => { 실행할 코드 } }>
+
+
+6. deep copy 방법
+- object / array 자료형 deep copy 시 ... 을 이용
+ex) 
+let [state_title, state_title_change] = useState(["지금 날씨는 영하 9도네요.","This is State", "오늘 풋살합니다~"]);
+var value = [...state_title];
+
