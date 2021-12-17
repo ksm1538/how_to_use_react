@@ -6,6 +6,7 @@ function App() {
   let [state_title, state_title_change] = useState(["지금 날씨는 영하 9도네요.","This is State", "오늘 풋살합니다~"]);
   let [recommendCnt, recommendCnt_change] = useState(0);
 
+  // state 수정 방법
   function change_title(){
     var value = [...state_title];
     value.sort();

@@ -42,3 +42,24 @@ ex)
 let [state_title, state_title_change] = useState(["지금 날씨는 영하 9도네요.","This is State", "오늘 풋살합니다~"]);
 var value = [...state_title];
 
+
+7. map (반복문) 사용 방법
+- array 자료형에 사용할 수 있는 내장 함수
+
+ex)
+var array = [2,3,4];
+array.map(function(item){
+  return item;
+});
+
+ex)
+function App (){
+  return (
+    <div>
+      ...
+      { array.map(function(item){
+        return (<div>item</div>)
+      }) }
+    </div>
+  )
+}
