@@ -6,9 +6,14 @@ function App (){
   let [date_, date_change] = useState(["2021-12-17","2021-12-18","2021-12-19"]);
 
   return (
-    <div>
-      <Modal state_title={state_title} date_={date_}></Modal>
-    </div>
+    <div className="App">
+      <div className="yellow-nav">
+          <div>SM's HowToUseReact </div>
+      </div>  
+      <div className="div-list">
+        <Modal state_title={state_title} date_={date_}></Modal>
+      </div>
+    </div>  
   )
 }
 
