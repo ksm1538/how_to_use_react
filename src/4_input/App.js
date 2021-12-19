@@ -24,7 +24,7 @@ function App (){
       // push : 배열 뒤에 추가
       // unshift : 배열 앞에 추가
       // shift : 배열 앞에서 삭제
-
+      
       state_title_change(array);
 
       var array=[...date_];
@@ -63,9 +63,6 @@ function App (){
         <button onClick={ ()=>{currentNoChange(2)} }>버튼 3</button>
         <Modal state_title={state_title} date_={date_} current_no={current_no}></Modal>
       </div>
-      <div>
-        <Profile/>
-      </div>
     </div>  
   )
 }
@@ -79,31 +76,6 @@ function Modal(props){
       <p>상세내용 : </p>
     </div>
   )
-}
-
-// 예전의 React 문법
-// React.Component 클래스를 상속받아 Profile에서도 같은 기능을 사용함
-class Profile extends React.Component {
-  constructor(){    // 변수를 넣는 공간
-    super();    // 상속받은 React.Component에 있는 변수를 사용하겠단 뜻.
-    this.state = {name : "React", age : "26.9"};
-  }
-
-  // function 문법으로 아래 함수 생성 후, this가 새롭게 재정의 됨.
-  changeName(){
-    this.setState( {name : 'Park'} )
-  }
-
-
-  render(){
-    return (
-      <div>
-        <h3>My name is {this.state.name}.</h3>
-        {/* 아래에서 changeName()이 아닌, this.changeName을 써야함 */}
-        <button onClick={ ()=>{ this.changeName() } }></button>
-      </div>
-    )
-  }
 }
 
 export default App;
