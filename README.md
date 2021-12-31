@@ -1,1 +1,1 @@
-how to use reactss
+how to use reacts
