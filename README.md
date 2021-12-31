@@ -1,1 +1,1 @@
-how to use reacts
+how to use react
